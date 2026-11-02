@@ -1,5 +1,5 @@
 ![Haunting logo](./src/assets/haunting_hours.svg)
-# Website design — Halloween Edition
+# Website design Halloween Edition
 
 ## A Seasonal Journey into the Spooky
 
