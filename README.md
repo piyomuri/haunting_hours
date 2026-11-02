@@ -10,6 +10,6 @@ Welcome to **Haunting Hours**, a Halloween-themed web project created to bring a
 ## ABOUT
 <a href="https://piyomuri.github.io/haunting_hours">Haunting Hours Web Link</a> <br/>
 <b>web technology</b>
-- <b>Vite:</b> web currently on working on Vite v8 
-- <b>Sections:</b> the page is divided in to sections 
+- <b>Vite:</b> Built using Vite for fast performance and development. 
+- <b>Sections:</b> the page is divided in to multiple sections 
 first the hero section which use a canvas element for the background animation 
