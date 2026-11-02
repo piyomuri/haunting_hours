@@ -1,0 +1,172 @@
+:root {
+    /* The Backgrounds */
+    --midnight-color: #080808;
+    --charcoal-color: #121212;
+    --midnight-purple-color: #120B1A;
+    --classic-midnight-sky: #041A40;
+
+    /* Brand accents */
+    --pumpkin-color-001: #FF6A00;
+    --Blood-org-color: #D62828;
+    /* --midnight-color: #000; */
+    --spell: #a55f91;
+    --toxic-slime: #50b848;
+    --pumpkin: #f75f1c;
+    --pumpkin-shadow: #ff9a00;
+    --witch-vio: #881ee4;
+    --shadow-hex: #452566;
+    --midnight-howl: #c763bb;
+
+    /* Text colour */
+    --moonlight-color: #F5F0E8;
+    --ash-color: #858585;
+    --fog-color: #B8B3B0;
+
+    /* Halloween background */
+    --halloween-moon: radial-gradient(
+        circle at 70% 16%,
+        rgba(255,238,255,0.5) 0%,
+        rgba(194,117,255,0.15) 18%,
+        transparent 35%
+    );
+    --halloween-bg: linear-gradient(
+        180deg
+        #49216D 0%,
+        #7838AE 25%,
+        #B957D0 48%,
+        #F29ABF 72%,
+        #302442 100%
+    );
+}
+
+/* global_style.css — shared layout, reset, and accessibility defaults */
+
+:root {
+  color-scheme: dark;
+  --pumpkin-color: #ff8a3d;
+  --pumpkin-bright: #ffad62;
+  --ink: #080817;
+  --cream: #f5f0e8;
+  --muted: #c8bfd0;
+  --header-height: 76px;
+  --content-width: 1200px;
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+  background: var(--ink);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a,
+[role="button"],
+li {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pumpkin-bright);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #160d18;
+  background: var(--pumpkin-bright);
+}
+
+#root {
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+main > section:not(.hero-section) {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 2 * var(--page-gutter), var(--content-width));
+  margin-inline: auto;
+  padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+
+main > section:not(.hero-section) > div:first-child {
+  color: var(--pumpkin-bright);
+  font-size: clamp(0.8rem, 3vw, 1.7rem);
+  font-weight: 800;
+}
+
+main > section:not(.hero-section) > div + div {
+  max-width: 70ch;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
