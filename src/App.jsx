@@ -712,7 +712,7 @@ function App() {
               width: '100%',
               height: `calc(100vh - ${heroContent.cHeight}px)`
             }}>
-            <h2>Welcome to the Huanting fest</h2>
+            <h2>Welcome to the Haunting fest</h2>
             <p>Looking For Some Candy?</p>
           </div>
         </section>
